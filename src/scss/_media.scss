@@ -1,0 +1,41 @@
+@mixin for-laptopL{
+    @media (max-width: 1441px){
+      @content;
+    }
+}
+@mixin for-laptop {
+    @media (max-width: 1025px){
+      @content;
+    }
+}
+
+@mixin for-tablet {
+  @media (max-width: 769px){
+    @content;
+  }
+}
+
+@mixin for-tablet-small {
+  @media (max-width: 668px){
+    @content;
+  }
+}
+
+
+@mixin for-iphone-plus {
+  @media (max-width: 415px){
+    @content;
+  }
+}
+
+@mixin for-iphone-seven {
+  @media (max-width: 376px){
+    @content;
+  }
+}
+
+@mixin for-iphone-SE {
+  @media (max-width: 320px){
+    @content;
+  }
+}

@@ -1,0 +1,56 @@
+// Footer --------------------
+
+.footer{
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    z-index: 5;
+    padding: 0 30px;
+    @include for-iphone-plus{
+        bottom: 3%;
+    }
+    @include for-iphone-seven{
+        bottom: 4%;
+    }
+}
+.footer_socials{
+    &-link{
+        text-decoration: none;
+        color: #000;
+        padding: 2px 3px 2px 8px;
+        position: relative;
+        &:after{
+            content:'';
+            display: block;
+            background-color:rgba(63, 63, 63, 0.2);
+            width: 30px;
+            height: 3px;
+            opacity: 0;
+            position: absolute;
+            top: calc(50% - 1.5px);
+            left: 0;
+            transition: opacity linear .1s;
+        }
+        &:hover:after{
+            opacity: 1;
+        }
+    }
+}
+.--inst{
+    padding: 2px 65px 2px 3px;
+    &:before{
+        content:'';
+        display: block;
+        background-color:#393939;
+        width: 56px;
+        height: 1px;
+        opacity: 1;
+        position: absolute;
+        top: calc(50% - 0.5px);
+        right: 0;
+        @include for-laptop{
+            height: 0.5px;
+            top: calc(50% - 0.25px);
+        }
+    }
+}
